@@ -1,0 +1,10 @@
+--Create main table
+CREATE TABLE scans(
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    path TEXT NOT NULL,
+    created DATETIME NOT NULL
+);
+
+getAllScans: SELECT * FROM scans ORDER BY created DESC,title ASC;
+
